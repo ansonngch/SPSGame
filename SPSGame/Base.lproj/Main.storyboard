@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SPSGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMc-71-NJB">
+                                <rect key="frame" x="16" y="283" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YMc-71-NJB" secondAttribute="height" multiplier="1:1" id="Ktu-0M-PWW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.41568627450000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ROCK"/>
+                                <connections>
+                                    <action selector="pressRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y51-vA-wdL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wq-1T-QX8">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.41568627450000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PAPER"/>
+                                <connections>
+                                    <action selector="pressPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vne-h6-OEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-s7-Wv9">
+                                <rect key="frame" x="259" y="283" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.41568627450000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SCISSORS"/>
+                                <connections>
+                                    <action selector="pressScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Cc-Xs-dXc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-OJ-61V">
+                                <rect key="frame" x="16" y="28" width="343" height="247"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.3411764706" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YMc-71-NJB" firstAttribute="baseline" secondItem="6wq-1T-QX8" secondAttribute="firstBaseline" id="4Z9-7D-Of4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dpf-OJ-61V" secondAttribute="bottom" constant="392" id="5eO-kw-Sj5"/>
+                            <constraint firstItem="wzC-s7-Wv9" firstAttribute="height" secondItem="YMc-71-NJB" secondAttribute="height" id="94Z-ge-X5C"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="height" secondItem="YMc-71-NJB" secondAttribute="height" id="A4k-DG-0We"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="leading" secondItem="YMc-71-NJB" secondAttribute="trailing" constant="21" id="AEO-4T-nTP"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="baseline" secondItem="wzC-s7-Wv9" secondAttribute="baseline" id="Amy-bi-qGb"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="trailing" secondItem="wzC-s7-Wv9" secondAttribute="trailing" id="Dvi-Yf-zar"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="top" secondItem="wzC-s7-Wv9" secondAttribute="top" id="Gty-YY-rwH"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QoY-kQ-v3w"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="centerX" secondItem="6wq-1T-QX8" secondAttribute="centerX" id="dfR-Um-89A"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="baseline" secondItem="wzC-s7-Wv9" secondAttribute="firstBaseline" id="j9a-Kn-5UF"/>
+                            <constraint firstItem="YMc-71-NJB" firstAttribute="top" secondItem="6wq-1T-QX8" secondAttribute="top" id="jHT-BM-To1"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="leading" secondItem="YMc-71-NJB" secondAttribute="leading" id="koY-Ob-vVM"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="baseline" secondItem="YMc-71-NJB" secondAttribute="firstBaseline" id="m3x-Bp-436"/>
+                            <constraint firstItem="6wq-1T-QX8" firstAttribute="width" secondItem="YMc-71-NJB" secondAttribute="width" id="npT-5c-G30"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pKf-Rx-lKC"/>
+                            <constraint firstItem="dpf-OJ-61V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tuH-pY-Uve"/>
+                            <constraint firstItem="YMc-71-NJB" firstAttribute="top" secondItem="dpf-OJ-61V" secondAttribute="bottom" constant="8" symbolic="YES" id="xAh-vX-jrf"/>
+                            <constraint firstItem="wzC-s7-Wv9" firstAttribute="width" secondItem="YMc-71-NJB" secondAttribute="width" id="xbp-BH-ZcT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outResults" destination="dpf-OJ-61V" id="BnC-Ks-Nrl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
